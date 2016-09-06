@@ -7,6 +7,7 @@ author:
 description: Render shapes in different positions using a World Matrix.
 language: C++
 tags:
+  - Math
   - Graphics
 extra_resources:
 connections:
