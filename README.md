@@ -4,8 +4,8 @@ This program introduces basic concepts involved in writing an OpenGL program.
 
 # About
 
-Multiplying a position by a World Matrix transforms the position from 'local space' to 'world space'.
-This example builds structure on top of previous examples and abstracts some of rendering code.
+Multiplying a position by a World Matrix transforms that position from 'local space' to 'world space'.
+This example builds on previous examples and abstracts some rendering code.
 
 # Setup
 

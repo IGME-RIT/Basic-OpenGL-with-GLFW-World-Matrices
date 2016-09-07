@@ -4,7 +4,7 @@ author:
   name: David Erbelding
   email: daviderbelding@gmail.com
   github: https://github.com/Erbelding
-description: Render shapes in different positions using a World Matrix.
+description: Render moving shapes with a World Matrix.
 language: C++
 tags:
   - Math

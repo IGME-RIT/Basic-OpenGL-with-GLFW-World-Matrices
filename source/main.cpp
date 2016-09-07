@@ -34,7 +34,7 @@ Shape* square;
 
 // Scale, Rotation and Translation constants for our shape.
 float s = .5f;
-float r = .5f;
+float r = 0;
 glm::vec2 t = glm::vec2(.3, .4);
 
 // These are the matrices that perform the operations using the above values.
@@ -103,8 +103,13 @@ int main(int argc, char **argv)
 	square = new Shape(vertices, indices);
 
 
-	// Set Render mode.
+	// Set Render mode to lines, that way we can see any overlapping shapes.
+	// GLPolygonMode takes a side: GL_FRONT, GL_BACK, or GL_FRONT_AND_BACK
+	// and the polygon mode use with that side: GL_FILL, GL_LINE, or GL_POINT
 	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	// This does not change which sides of faces are rendered, only which way they are rendered.
+	// For example, you can set GL_FRONT to GL_FACE, and GL_BACK to GL_LINE.
+	// In that situation, both sides will render, but the front will be filled, and the back will render lines.
 
 
 
@@ -115,6 +120,12 @@ int main(int argc, char **argv)
 		// Clear the screen.
 		glClear(GL_COLOR_BUFFER_BIT);
 		glClearColor(0.0, 0.0, 0.0, 0.0);
+
+
+		// Increment the rotation to spin the square
+		r += .0002f;
+
+
 
 		// A scale matrix simply multiplies the x and y components by the scale.
 		// (It's also possible to scale in only one direction, but it's usually not a good idea)
