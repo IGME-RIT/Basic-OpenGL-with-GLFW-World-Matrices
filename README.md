@@ -1,4 +1,4 @@
-# Basic OpenGL with GLFW: Index Buffers
+# Basic OpenGL with GLFW: World Matrices
 
 This program introduces basic concepts involved in writing an OpenGL program.
 
